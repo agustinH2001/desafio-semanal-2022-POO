@@ -1,3 +1,6 @@
+from re import I
+
+
 def primo_check(num):
     cont = 0
     for i in range(1,num):
@@ -9,17 +12,19 @@ def primo_check(num):
         return False
 
 def primos_print(cant):
-    veces = 0
-    print(f"Primeros {cant} numeros primos:")
-    while veces<cant:
-        veces += 1
-        if primo_check(veces):
-            print(veces)
+    numprimos = []
+    cont = 0
+    print(f"Primeros {cant} numeros primos:", end=" ")
+    while len(numprimos)!=cant:
+        cont += 1
+        if primo_check(cont):
+            numprimos.append(cont)
+    print(numprimos)
             
 
-if primo_check(6):
+if primo_check(4):
     print("Es primo")
 else:
     print("No es primo")
 
-primos_print(5)
+primos_print(10)
