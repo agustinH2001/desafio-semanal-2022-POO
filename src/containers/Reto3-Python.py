@@ -9,6 +9,16 @@ def primo_check(num):
         print(f"{num} no es primo")
 
 def primos(cant):
-    
+    veces = 1
+    print(f"Primeros {cant} numeros primos:")
+    while veces<cant:
+        cont = 0
+        for i in range(1,cant):
+            if veces%i == 0:
+                cont += 1
+        if cont<2:
+            print(veces)
+            veces += 1
 
 primo_check(73)
+primos(7)
