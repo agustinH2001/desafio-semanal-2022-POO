@@ -4,6 +4,6 @@ def binario(num):
         lstNum.append(str(num%2))
         num = num//2
     num = "".join(lstNum)
-    print(num)
+    return num
 
-binario(43)
+print(binario(43))

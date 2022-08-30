@@ -5,6 +5,6 @@ def invertir(pal):
     pal = ""
     for i in lstPal:
         pal += i
-    print(pal)
+    return pal
 
-invertir("Hola mundo")    
+print(invertir("Hola mundo"))    
